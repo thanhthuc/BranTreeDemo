@@ -77,9 +77,6 @@ class ViewController: UIViewController {
             }
             controller.dismiss(animated: true, completion: nil)
         }
-        
-        
-        
         self.present(dropIn!, animated: true, completion: nil)
     }
     
@@ -152,9 +149,17 @@ extension ViewController {
         let paymentURL = BTAPIEndPoint.checkout.url
         
         var request = URLRequest(url: paymentURL!)
-        request.httpMethod = BTAPIEndPoint.checkout.httpMethod   
-        request.httpBody = 	"payment_method_nonce=\(paymentMethodNonce)".data(using: .utf8)
-             
+        
+        request.httpMethod = BTAPIEndPoint.checkout.httpMethod 
+        
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        
+        // MARK: Custom more info here
+        
+        let bodyData = "payment_method_nonce=\(paymentMethodNonce)&amount=15"
+        
+        request.httpBody = bodyData.data(using: .utf8)
+        
         networkClient.sendRequest(request: request) { (data, response, error) in
             
             let response = response as? HTTPURLResponse
@@ -169,7 +174,12 @@ extension ViewController {
                 if let error = error {
                     print(error)
                 } else if let data = data {
-                    print("Success transaction with data: \(data)")
+                    do {
+                        let dict = try JSONSerialization.jsonObject(with: data, options: [])
+                        print("Success transaction with data: \(dict)")
+                    }catch {
+                        print(error)
+                    }
                 }
             }
             
