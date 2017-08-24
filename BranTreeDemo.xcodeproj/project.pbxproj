@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C14DF0C1F4E5986002AB2D1 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C14DF0B1F4E5986002AB2D1 /* NetworkClient.swift */; };
+		6A3C3CC61F4ACFD8009CC5B1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3C3CC51F4ACFD8009CC5B1 /* API.swift */; };
+		6AB132F81F39AF86009C75D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB132F71F39AF86009C75D9 /* AppDelegate.swift */; };
+		6AB132FA1F39AF86009C75D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB132F91F39AF86009C75D9 /* ViewController.swift */; };
+		6AB132FD1F39AF86009C75D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB132FB1F39AF86009C75D9 /* Main.storyboard */; };
+		6AB132FF1F39AF86009C75D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB132FE1F39AF86009C75D9 /* Assets.xcassets */; };
+		6AB133021F39AF86009C75D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB133001F39AF86009C75D9 /* LaunchScreen.storyboard */; };
+		F19D2425B46B9F838447A8E2 /* Pods_BranTreeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E64060FDF03D7454C646A47 /* Pods_BranTreeDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E64060FDF03D7454C646A47 /* Pods_BranTreeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BranTreeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C14DF0B1F4E5986002AB2D1 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		6A3C3CC51F4ACFD8009CC5B1 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6AB132F41F39AF85009C75D9 /* BranTreeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BranTreeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AB132F71F39AF86009C75D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6AB132F91F39AF86009C75D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6AB132FC1F39AF86009C75D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AB132FE1F39AF86009C75D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AB133011F39AF86009C75D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AB133031F39AF86009C75D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E7F410ED6F89EEDF5298D72 /* Pods-BranTreeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BranTreeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BranTreeDemo/Pods-BranTreeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8F846677305B8E85DB618E30 /* Pods-BranTreeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BranTreeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BranTreeDemo/Pods-BranTreeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6AB132F11F39AF85009C75D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19D2425B46B9F838447A8E2 /* Pods_BranTreeDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DB5BC17BEE7B403C42CFE43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E64060FDF03D7454C646A47 /* Pods_BranTreeDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		445A1C56D15FAD6D6620CD2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F846677305B8E85DB618E30 /* Pods-BranTreeDemo.debug.xcconfig */,
+				7E7F410ED6F89EEDF5298D72 /* Pods-BranTreeDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6AB132EB1F39AF85009C75D9 = {
+			isa = PBXGroup;
+			children = (
+				6AB132F61F39AF86009C75D9 /* BranTreeDemo */,
+				6AB132F51F39AF85009C75D9 /* Products */,
+				445A1C56D15FAD6D6620CD2D /* Pods */,
+				0DB5BC17BEE7B403C42CFE43 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6AB132F51F39AF85009C75D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6AB132F41F39AF85009C75D9 /* BranTreeDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6AB132F61F39AF86009C75D9 /* BranTreeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				6AB132F71F39AF86009C75D9 /* AppDelegate.swift */,
+				6AB132F91F39AF86009C75D9 /* ViewController.swift */,
+				6A3C3CC51F4ACFD8009CC5B1 /* API.swift */,
+				4C14DF0B1F4E5986002AB2D1 /* NetworkClient.swift */,
+				6AB132FB1F39AF86009C75D9 /* Main.storyboard */,
+				6AB132FE1F39AF86009C75D9 /* Assets.xcassets */,
+				6AB133001F39AF86009C75D9 /* LaunchScreen.storyboard */,
+				6AB133031F39AF86009C75D9 /* Info.plist */,
+			);
+			path = BranTreeDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6AB132F31F39AF85009C75D9 /* BranTreeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AB133061F39AF86009C75D9 /* Build configuration list for PBXNativeTarget "BranTreeDemo" */;
+			buildPhases = (
+				0C0753BB8913CD47277DDA2A /* [CP] Check Pods Manifest.lock */,
+				6AB132F01F39AF85009C75D9 /* Sources */,
+				6AB132F11F39AF85009C75D9 /* Frameworks */,
+				6AB132F21F39AF85009C75D9 /* Resources */,
+				6631F80923A0B973CA002D3B /* [CP] Embed Pods Frameworks */,
+				48933FC45186190985144E76 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BranTreeDemo;
+			productName = BranTreeDemo;
+			productReference = 6AB132F41F39AF85009C75D9 /* BranTreeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6AB132EC1F39AF85009C75D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Nguyen Thanh Thuc";
+				TargetAttributes = {
+					6AB132F31F39AF85009C75D9 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6AB132EF1F39AF85009C75D9 /* Build configuration list for PBXProject "BranTreeDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6AB132EB1F39AF85009C75D9;
+			productRefGroup = 6AB132F51F39AF85009C75D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6AB132F31F39AF85009C75D9 /* BranTreeDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6AB132F21F39AF85009C75D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB133021F39AF86009C75D9 /* LaunchScreen.storyboard in Resources */,
+				6AB132FF1F39AF86009C75D9 /* Assets.xcassets in Resources */,
+				6AB132FD1F39AF86009C75D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C0753BB8913CD47277DDA2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BranTreeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48933FC45186190985144E76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BranTreeDemo/Pods-BranTreeDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6631F80923A0B973CA002D3B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BranTreeDemo/Pods-BranTreeDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Braintree/Braintree.framework",
+				"${BUILT_PRODUCTS_DIR}/BraintreeDropIn/BraintreeDropIn.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Braintree.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BraintreeDropIn.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BranTreeDemo/Pods-BranTreeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6AB132F01F39AF85009C75D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AB132FA1F39AF86009C75D9 /* ViewController.swift in Sources */,
+				6A3C3CC61F4ACFD8009CC5B1 /* API.swift in Sources */,
+				6AB132F81F39AF86009C75D9 /* AppDelegate.swift in Sources */,
+				4C14DF0C1F4E5986002AB2D1 /* NetworkClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6AB132FB1F39AF86009C75D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB132FC1F39AF86009C75D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6AB133001F39AF86009C75D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB133011F39AF86009C75D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6AB133041F39AF86009C75D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6AB133051F39AF86009C75D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6AB133071F39AF86009C75D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F846677305B8E85DB618E30 /* Pods-BranTreeDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = BranTreeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sutrix.BranTreeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6AB133081F39AF86009C75D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7F410ED6F89EEDF5298D72 /* Pods-BranTreeDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = BranTreeDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sutrix.BranTreeDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AB132EF1F39AF85009C75D9 /* Build configuration list for PBXProject "BranTreeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB133041F39AF86009C75D9 /* Debug */,
+				6AB133051F39AF86009C75D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AB133061F39AF86009C75D9 /* Build configuration list for PBXNativeTarget "BranTreeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AB133071F39AF86009C75D9 /* Debug */,
+				6AB133081F39AF86009C75D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6AB132EC1F39AF85009C75D9 /* Project object */;
+}

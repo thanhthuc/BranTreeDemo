@@ -1,0 +1,6 @@
+framework module Pods_BranTreeDemo {
+  umbrella header "Pods-BranTreeDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
