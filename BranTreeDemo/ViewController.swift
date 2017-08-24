@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
 //    var brainTree: BT?
     
-    let networkClient = NetworkClient.sharedInstance
+    let btNetworkClient = NetworkClient.sharedInstance
     var clientToken: String?
     
     override func viewDidLoad() {
@@ -133,7 +133,7 @@ extension ViewController {
         request.httpMethod = BTAPIEndPoint.getClientToken.httpMethod
         request.setValue("text/plain", forHTTPHeaderField: "Accept")
         
-        networkClient.sendRequest(request: request as URLRequest) { (data, respond, error) in
+        btNetworkClient.sendRequest(request: request as URLRequest) { (data, respond, error) in
             if let error = error {
                 print(error)
             } else if let data = data {
@@ -160,7 +160,7 @@ extension ViewController {
         
         request.httpBody = bodyData.data(using: .utf8)
         
-        networkClient.sendRequest(request: request) { (data, response, error) in
+        btNetworkClient.sendRequest(request: request) { (data, response, error) in
             
             let response = response as? HTTPURLResponse
             if let response = response {
@@ -182,10 +182,10 @@ extension ViewController {
                     }
                 }
             }
-            
-            
         }
     }
+    
+    
 
     
 }
